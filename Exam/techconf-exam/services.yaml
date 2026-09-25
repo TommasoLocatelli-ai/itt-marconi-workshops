@@ -33,15 +33,21 @@ services:
     command: python -m app
     health_path: /health
 
-  event:
-    cwd: services/event_service
-    command: python -m app
-    health_path: /health
+  # NB: event e registration non sono ancora implementati (le directory
+  # services/event_service e services/registration_service non esistono).
+  # La suite li avvierebbe comunque, e subprocess.Popen fallisce con
+  # NotADirectoryError sul cwd inesistente, abortendo l'intera platform.
+  # Restano commentati finché i servizi non vengono implementati; per ora
+  # si collauda solo user-service.
+  # event:
+  #   cwd: services/event_service
+  #   command: python -m app
+  #   health_path: /health
 
-  registration:
-    cwd: services/registration_service
-    command: python -m app
-    health_path: /health
+  # registration:
+  #   cwd: services/registration_service
+  #   command: python -m app
+  #   health_path: /health
 
   # ------------------------------- opzionali --------------------------------
   # Decommentare solo dopo aver implementato il servizio corrispondente.

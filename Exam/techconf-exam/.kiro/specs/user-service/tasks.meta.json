@@ -1,0 +1,587 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Setup struttura del servizio e configurazione": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885099
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341903691
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342204508
+      }
+    ],
+    "2.1 Creare `app/models.py` con la dataclass `User`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885310
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342220700
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342310200
+      }
+    ],
+    "2.2 Creare `app/exceptions.py` con le eccezioni custom": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885417
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342221849
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342311266
+      }
+    ],
+    "3.1 Creare la classe base `UserRepository` in `app/repository.py`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885586
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342325542
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342495550
+      }
+    ],
+    "3.2 Implementare `MemoryRepository`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885670
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342496988
+      }
+    ],
+    "3.3 Implementare `JsonRepository`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885758
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342498308
+      }
+    ],
+    "3.4 Implementare `SqliteRepository`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885831
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342499335
+      }
+    ],
+    "3.5 Implementare `get_repository()` factory": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885906
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342500347
+      }
+    ],
+    "4. Checkpoint — Verificare il Repository Pattern": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341885985
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342527302
+      }
+    ],
+    "5.1 Creare `UserService(repo: UserRepository)` in `app/service.py` con `create_user`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886078
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342531214
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342710399
+      }
+    ],
+    "5.5 Implementare `list_users(filters: dict, page: int, page_size: int) -> dict`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886145
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342532548
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342709067
+      }
+    ],
+    "5.9 Implementare `get_user(id: str) -> dict`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886229
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342534031
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342707718
+      }
+    ],
+    "5.11 Implementare `replace_user(id: str, data: dict) -> dict`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886299
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342535354
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342706657
+      }
+    ],
+    "5.13 Implementare `update_user(id: str, data: dict) -> dict`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886378
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342536767
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342705266
+      }
+    ],
+    "5.15 Implementare `delete_user(id: str) -> None`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886453
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342537749
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342703976
+      }
+    ],
+    "6. Checkpoint — Verificare il Service Layer": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886538
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342724203
+      }
+    ],
+    "7.1 Creare `app/routes.py` con Blueprint e `GET /health`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886618
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342729259
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342965597
+      }
+    ],
+    "7.2 Implementare `POST /api/v1/users`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886698
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342729687
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342966639
+      }
+    ],
+    "7.3 Implementare `GET /api/v1/users`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886764
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342730966
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342967962
+      }
+    ],
+    "7.4 Implementare `GET /api/v1/users/<id>`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886854
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342732370
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342969402
+      }
+    ],
+    "7.5 Implementare `PUT /api/v1/users/<id>`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341886932
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342733419
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342970310
+      }
+    ],
+    "7.6 Implementare `PATCH /api/v1/users/<id>`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887028
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342734734
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342971669
+      }
+    ],
+    "7.7 Implementare `DELETE /api/v1/users/<id>`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887098
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342735906
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342964274
+      }
+    ],
+    "8. Checkpoint — Verificare il Router": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887184
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342993236
+      }
+    ],
+    "9.1 Creare `tests/conftest.py` con le fixture base": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887265
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342994149
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343207385
+      }
+    ],
+    "9.2 Creare `tests/unit/test_repository.py`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887338
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343220332
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343501320
+      }
+    ],
+    "9.4 Creare `tests/unit/test_service.py`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887426
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343221284
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343502706
+      }
+    ],
+    "9.5 Creare `tests/unit/test_routes.py`": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887554
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343222737
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343509492
+      }
+    ],
+    "9.6 Creare `tests/unit/test_properties.py` con Hypothesis": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887634
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343223901
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343509933
+      }
+    ],
+    "10. Checkpoint finale — Verificare coverage e suite di collaudo": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790341887712
+      },
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343544725
+      }
+    ],
+    "2. Modelli dati ed eccezioni": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342311336
+      }
+    ],
+    "3. Repository Pattern — interfaccia e backend": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342500429
+      }
+    ],
+    "7. Router Flask — endpoint HTTP": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790342971762
+      }
+    ],
+    "5.2 Scrivere property test per `create_user` (Property 1)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343515163
+      }
+    ],
+    "5.3 Scrivere property test per unicità email in `create_user` (Property 2)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343516621
+      }
+    ],
+    "5.4 Scrivere property test per normalizzazione email (Property 3)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343518035
+      }
+    ],
+    "5.6 Scrivere property test per filtro per ruolo (Property 4)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343518968
+      }
+    ],
+    "5.7 Scrivere property test per filtro per email (Property 5)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343520395
+      }
+    ],
+    "5.8 Scrivere property test per filtri combinati (Property 6)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343521762
+      }
+    ],
+    "5.10 Scrivere property test per round-trip GET (Property 7)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343523177
+      }
+    ],
+    "5.12 Scrivere property test per PUT (Property 8)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343524203
+      }
+    ],
+    "5.14 Scrivere property test per PATCH (Property 9)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343525779
+      }
+    ],
+    "5.16 Scrivere property test per DELETE (Property 10)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343526970
+      }
+    ],
+    "5. Service Layer — logica di business": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343527058
+      }
+    ],
+    "9.3 Scrivere property test per equivalenza dei tre backend (Property 11)": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343527980
+      }
+    ],
+    "9. Test unitari": [
+      {
+        "executionId": "b5298672-eccd-40b7-85a0-f1e0f8f3f439",
+        "chatSessionId": "sess_f8555c0a-cb85-4a54-b8aa-67b885a5029d",
+        "timestamp": 1790343528089
+      }
+    ]
+  }
+}
