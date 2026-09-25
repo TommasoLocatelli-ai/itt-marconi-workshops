@@ -1,0 +1,9 @@
+# Runtime
+flask
+requests
+
+# Test
+pytest
+pytest-cov
+responses
+hypothesis
