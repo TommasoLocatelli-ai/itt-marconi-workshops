@@ -12,12 +12,19 @@ def create_app(repo=None):
     """
     app = Flask(__name__)
 
-    # Import locale del blueprint: evita import circolari e permette che la
-    # factory funzioni anche prima che service.py/repository.py esistano.
+    # Se nessun repository e iniettato esplicitamente (tipico dei test), la
+    # factory seleziona il backend configurato tramite get_repository().
+    if repo is None:
+        from .repository import get_repository
+        repo = get_repository()
+
+    # Import locale del blueprint: evita import circolari.
     from .routes import bp
 
-    if repo is not None:
-        bp.repo = repo
+    # Dependency injection: il router accede al repository via bp.repo e vi
+    # costruisce sopra un UserService. bp.repo e un attributo condiviso a
+    # livello di modulo; viene reimpostato a ogni create_app (ok per i test).
+    bp.repo = repo
 
     app.register_blueprint(bp)
     return app
