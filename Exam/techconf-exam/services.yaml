@@ -1,0 +1,57 @@
+﻿# -----------------------------------------------------------------------------
+# services.yaml — manifest letto dalla suite di collaudo
+# -----------------------------------------------------------------------------
+# Dichiara solo i servizi implementati. I servizi non elencati vengono
+# saltati (skipped) dalla suite, non marcati come falliti.
+#
+# Per ogni servizio la suite:
+#   1. avvia il processo con `command` nella directory `cwd`;
+#   2. inietta le variabili d'ambiente:
+#        PORT                      porta su cui il servizio DEVE ascoltare
+#        USER_SERVICE_URL          es. http://localhost:15001
+#        EVENT_SERVICE_URL         es. http://localhost:15002
+#        REGISTRATION_SERVICE_URL  es. http://localhost:15003
+#        STORAGE_BACKEND           memory | json | sqlite
+#        DATA_DIR                  directory per i file json/sqlite
+#   3. attende che GET {base_url}/health risponda 200;
+#   4. esegue i test, poi termina il processo.
+#
+# Note:
+#   * La porta deve essere letta SEMPRE da $PORT — la suite usa 15001-15005
+#     (e 15101+ per le istanze di resilienza), non le porte di sviluppo.
+#   * Gli URL degli altri servizi devono provenire dalle variabili *_SERVICE_URL,
+#     mai hard-coded.
+#   * `command` viene eseguito nella shell dentro `cwd`. Si usa un interprete
+#     esplicito invece di affidarsi a un virtualenv attivato.
+# -----------------------------------------------------------------------------
+
+services:
+  # ------------------------------- obbligatori -------------------------------
+
+  user:
+    cwd: services/user_service
+    command: python -m app
+    health_path: /health
+
+  event:
+    cwd: services/event_service
+    command: python -m app
+    health_path: /health
+
+  registration:
+    cwd: services/registration_service
+    command: python -m app
+    health_path: /health
+
+  # ------------------------------- opzionali --------------------------------
+  # Decommentare solo dopo aver implementato il servizio corrispondente.
+
+  # feedback:
+  #   cwd: services/feedback_service
+  #   command: python -m app
+  #   health_path: /health
+
+  # notification:
+  #   cwd: services/notification_service
+  #   command: python -m app
+  #   health_path: /health
